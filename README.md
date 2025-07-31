@@ -3,7 +3,7 @@
 > For more detailed documentation about the findings, please refer
 > to the GitHub Repo Wiki for reference.
 
->_Multiple Linear Regression: Predicting energy consumption in Singapore_ 
+>_Multiple Linear Regression Model: Predicting energy consumption in Singapore_ 
 
 ---
 ## About the Project
