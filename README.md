@@ -28,11 +28,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 2. Create a Virtual Environment
    - On Unix/macOS:
    ```commandline
-   python3.13.2 -m venv dtp3
+   python3.13 -m venv dtp3
    ```
    - On Windows (PowerShell):
    ```commandline
-   py -3.13.2 -m venv dtp3
+   py -3.13 -m venv dtp3
    ```
 3. Activate the Virtual Environment
    - On bash/macOS:
