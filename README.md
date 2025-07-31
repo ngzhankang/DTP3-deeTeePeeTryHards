@@ -17,6 +17,51 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - See `requirements.txt` for more info.
 
 ---
+## Local Setup
+> [!IMPORTANT]
+> The procedures below assume that users are familiar with command-line operations using PowerShell (on Windows) or Bash (on MacOS/Linux). If you are unfamiliar with these tools, please consult their respective documentation before proceeding.
+1. Clone the repository to the working directory where you want the cloned directory:
+     ```commandline 
+     git clone [REPO_URL]
+     cd [project-folder]
+     ```
+2. Create a Virtual Environment
+   - On Unix/macOS:
+   ```commandline
+   python3.13.2 -m venv dtp3
+   ```
+   - On Windows (PowerShell):
+   ```commandline
+   py -3.13.2 -m venv dtp3
+   ```
+3. Activate the Virtual Environment
+   - On bash/macOS:
+   ```commandline
+   source dtp3/bin/activate
+   ```
+   - On fish:
+   ```commandline
+   source dtp3/bin/activate.fish
+   ```
+   - On Windows (PowerShell):
+   ```commandline
+   dtp3\Scripts\Activate.ps1
+   ```
+   - To Deactivate:
+   ```commandline
+   deactivate
+   ```
+4. Install Dependencies
+   - On Unix/macOS:
+   ```commandline
+   python3 -m pip install -r requirements.txt
+   ```
+   - On Windows (PowerShell):
+   ```commandline
+   py -m pip install -r requirements.txt
+   ```
+
+---
 ## File Structure
 ```plaintext
 Lorem ipsum dolor sit amet, consectetur adipiscing e
