@@ -42,25 +42,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
    conda-project lock
    conda env export > environment.yml
    ```
-   - To deactivate the conda environment, simply type:
+   To deactivate the conda environment, simply type:
    ```commandline
    conda deactivate
    ```
-   - And in future if you ever want to open the conda environment again, simply type:
+   And in future if you ever want to open the conda environment again, simply type:
    ```commandline
    conda activate dtp3
    ```
-
-3. Install Dependencies
-   - On Unix/macOS:
-   ```commandline
-   python3 -m pip install -r requirements.txt
-   ```
-   - On Windows (PowerShell):
-   ```commandline
-   py -m pip install -r requirements.txt
-   ```
-
+   
 ---
 ## File Structure
 ```plaintext
