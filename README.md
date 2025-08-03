@@ -34,16 +34,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
      ```commandline
      (dtp3) user $
      ```
-   > [!IMPORTANT]
-   > If you ever have to install/uninstall new libraries in future, download/uninstall the library first, and once done, lock the project, so that the environment is reproducible to the team during updates. See more [here](https://www.anaconda.com/docs/tools/working-with-conda/environments#locking-an-environment).
-   > ```commandline
-   > conda activate dtp3
-   > conda [install/uninstall] <WHATEVER LIBRARY YOU HAVE TO INSTALL>
-   > conda install conda-project
-   > conda-project lock
-   > conda env export > environment.yml
-   > ```
-
+   If you ever have to install/uninstall new libraries in future, download/uninstall the library first, and once done, lock the project, so that the environment is reproducible to the team during updates. See more [here](https://www.anaconda.com/docs/tools/working-with-conda/environments#locking-an-environment).
+   ```commandline
+   conda activate dtp3
+   conda [install/uninstall] <WHATEVER LIBRARY YOU HAVE TO INSTALL>
+   conda install conda-project
+   conda-project lock
+   conda env export > environment.yml
+   ```
    - To deactivate the conda environment, simply type:
    ```commandline
    conda deactivate
