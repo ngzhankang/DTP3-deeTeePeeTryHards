@@ -1,0 +1,6 @@
+name: DTP3-deeTeePeeTryHards
+environments:
+  default:
+    - environment.yml
+variables: {}
+commands: {}

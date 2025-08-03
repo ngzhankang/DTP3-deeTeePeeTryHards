@@ -1,5 +1,5 @@
 # SUTD DTP III Project: Multiple Linear Regression Model
-> [!Note]
+> [!NOTE]
 > For more detailed documentation about the findings, please refer
 > to the GitHub Repo Wiki for reference.
 
@@ -25,33 +25,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
      git clone [REPO_URL]
      cd [project-folder]
      ```
-2. Create a Virtual Environment
-   - On Unix/macOS:
+2. [Download Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install), then open Anaconda Prompt (Windows) or Terminal (Mac/Linux). Run:
+     ```commandline
+     conda env create --file environment.yml
+     conda activate dtp3
+     ```
+   You should see the word `(dtp3)` in your prompt something like:
+     ```commandline
+     (dtp3) user $
+     ```
+   > [!IMPORTANT]
+   > If you ever have to install/uninstall new libraries in future, download/uninstall the library first, and once done, lock the project, so that the environment is reproducible to the team during updates. See more [here](https://www.anaconda.com/docs/tools/working-with-conda/environments#locking-an-environment).
+   > ```commandline
+   > conda activate dtp3
+   > conda [install/uninstall] <WHATEVER LIBRARY YOU HAVE TO INSTALL>
+   > conda install conda-project
+   > conda-project lock
+   > conda env export > environment.yml
+   > ```
+
+   - To deactivate the conda environment, simply type:
    ```commandline
-   python3 -m venv dtp3
+   conda deactivate
    ```
-   - On Windows (PowerShell):
+   - And in future if you ever want to open the conda environment again, simply type:
    ```commandline
-   py -3 -m venv dtp3
+   conda activate dtp3
    ```
-3. Activate the Virtual Environment
-   - On bash/macOS:
-   ```commandline
-   source dtp3/bin/activate
-   ```
-   - On fish:
-   ```commandline
-   source dtp3/bin/activate.fish
-   ```
-   - On Windows (PowerShell):
-   ```commandline
-   dtp3\Scripts\Activate.ps1
-   ```
-   - To Deactivate:
-   ```commandline
-   deactivate
-   ```
-4. Install Dependencies
+
+3. Install Dependencies
    - On Unix/macOS:
    ```commandline
    python3 -m pip install -r requirements.txt
