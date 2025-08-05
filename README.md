@@ -25,7 +25,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
      git clone [REPO_URL]
      cd [project-folder]
      ```
-2. [Download Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install), then open Anaconda Prompt (Windows) or Terminal (Mac/Linux). Run:
+2. [Download Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install), then open Anaconda Prompt (Windows) or Terminal (Mac/Linux). Run the following commands, it should download all the necessary libraries already:
      ```commandline
      conda env create --file environment.yml
      conda activate dtp3
