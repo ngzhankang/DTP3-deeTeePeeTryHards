@@ -5,16 +5,20 @@
 
 ---
 ## About the Project
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The purpose of this project is for you to apply what you have learnt in this course. This includes working with data and visualizing it, create model of linear regression, as well as using metrics to measure the accuracy of your model.
+
+## Project Handout
+---
+Please find the project handout description [here.](./DDW%20-%20DTP%20III%20-%20Design%20Brief%202025.pdf)
 
 ---
 ## Objectives
-- [ ] Identify Anomalies, Normalize Data, etc.
-- [X] Predict the growth of the dataset in the next 10 years.
+- [X] Identify Anomalies, Normalize Data, etc.
+- [X] Predict the energy consumption based on features.
 
 ---
 ## Libraries Used
-- See `requirements.txt` for more info.
+- See `conda-project.yml` for more info.
 
 ---
 ## Local Setup
@@ -50,16 +54,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
    ```commandline
    conda activate dtp3
    ```
+3. To run StreamLit, simply go the the main directory of the project and type the following:
+   ```commandline
+   streamlit run Home.py
+   ```
+   Open the `Local URL` in your preferred browser. To stop the server, simply press the keybind `Ctrl` + `C`.
    
 ---
 ## File Structure
 ```plaintext
-Lorem ipsum dolor sit amet, consectetur adipiscing e
-lit, sed do eiusmod tempor incididunt ut labore et d
-olore magna aliqua. Ut enim ad minim veniam, quis no
-strud exercitation ullamco laboris nisi ut aliquip e
-x ea commodo consequat. Duis aute irure dolor in rep
-rehenderit in voluptate velit esse cillum.
+|
+|-data
+| |-Energy_Consumption_Dataset.csv
+| |-energyConsumption.xlsx
+|-pages
+| |-Make Predictions.py
+| |-View Dataset.py
+|-training
+| |-Project Template.ipynb
+| |-multiRegressionModel.npz
+|-.condarc
+|-.gitignore
+|-conda-lock.default.yml
+|-conda-project.yml
+|-DDW - DTP III - Design Brief 2025.pdf
+|-environment.yml
+|-hepler.py
+|-Home.py
+|-LICENSE
+|-README.md
 ```
 
 ---
@@ -71,4 +94,6 @@ rehenderit in voluptate velit esse cillum.
 
 ---
 ## References
-- [IDK WHATS THIS](www.google.com)
+- [Multi Linear Regression(Energy Consumption Data)](https://www.kaggle.com/code/devsurakshitkapoor/multi-linear-regression-energy-consumption-data)
+- [SUTD DDW Mini Project 1: Sorting App](https://data-driven-world.github.io/2023/projects/sorting-app)
+- [SUTD DDW Mini Project 2: Math Quiz App](https://data-driven-world.github.io/2023/projects/calculator-app)
